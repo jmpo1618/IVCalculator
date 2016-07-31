@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Calculator View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="IVCalculatorViewController" customModule="IV_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WpS-kH-61e">
+                                <rect key="frame" x="252" y="28" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Wzi-cU-9QQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UAv-eG-1D5">
+                                <rect key="frame" x="252" y="66" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="pk5-dX-tQu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IDU-GO-6aR">
+                                <rect key="frame" x="252" y="104" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="S11-ff-1gR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yne-fW-Uco">
+                                <rect key="frame" x="252" y="142" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="iA1-1N-wzY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LeT-KD-ni7">
+                                <rect key="frame" x="276" y="180" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LeT-KD-ni7" firstAttribute="top" secondItem="Yne-fW-Uco" secondAttribute="bottom" constant="8" id="0IZ-qx-LdE"/>
+                            <constraint firstItem="WpS-kH-61e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3XA-X4-ZtU"/>
+                            <constraint firstItem="IDU-GO-6aR" firstAttribute="leading" secondItem="Yne-fW-Uco" secondAttribute="leading" id="BI7-qD-pTa"/>
+                            <constraint firstItem="Yne-fW-Uco" firstAttribute="top" secondItem="IDU-GO-6aR" secondAttribute="bottom" constant="8" id="OX0-df-e14"/>
+                            <constraint firstItem="UAv-eG-1D5" firstAttribute="leading" secondItem="IDU-GO-6aR" secondAttribute="leading" id="Qv9-Ve-DnJ"/>
+                            <constraint firstItem="UAv-eG-1D5" firstAttribute="top" secondItem="WpS-kH-61e" secondAttribute="bottom" constant="8" id="UhC-AY-vZ0"/>
+                            <constraint firstItem="UAv-eG-1D5" firstAttribute="leading" secondItem="WpS-kH-61e" secondAttribute="leading" id="blS-AP-yna"/>
+                            <constraint firstItem="Yne-fW-Uco" firstAttribute="centerX" secondItem="LeT-KD-ni7" secondAttribute="centerX" id="ivW-ag-vd6"/>
+                            <constraint firstItem="IDU-GO-6aR" firstAttribute="top" secondItem="UAv-eG-1D5" secondAttribute="bottom" constant="8" id="jq1-sZ-XvF"/>
+                            <constraint firstItem="WpS-kH-61e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="kfB-jy-t8q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CPTextField" destination="UAv-eG-1D5" id="d7w-ap-wTF"/>
+                        <outlet property="HPTextField" destination="IDU-GO-6aR" id="9X6-D2-iEj"/>
+                        <outlet property="dustTextField" destination="Yne-fW-Uco" id="7kY-fY-DxI"/>
+                        <outlet property="pokemonNameTextField" destination="WpS-kH-61e" id="ETW-Z7-E5h"/>
+                        <outlet property="poweredTextField" destination="LeT-KD-ni7" id="spe-EJ-sgh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
