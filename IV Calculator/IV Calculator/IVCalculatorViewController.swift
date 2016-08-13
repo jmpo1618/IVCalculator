@@ -129,14 +129,17 @@ class IVCalculatorViewController: UIViewController, UIPickerViewDataSource, UIPi
     
     // TODO: Add buttons for selecting in pickerView
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        // Pass the stats collected to the IVResultsViewController
+        let statsCollected = PokemonStats(name: pokemonNameTextField.text!, CP: Int(CPTextField.text!)!, HP: Int(HPTextField.text!)!, dust: Int(dustTextField.text!)!, powered: poweredTextField.on)
+        let resultsViewController = segue.destinationViewController as! IVResultsViewController
+        resultsViewController.stats = statsCollected
     }
-    */
+    
 
 }
