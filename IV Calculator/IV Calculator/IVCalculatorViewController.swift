@@ -15,6 +15,7 @@ class IVCalculatorViewController: UIViewController, UIPickerViewDataSource, UIPi
     @IBOutlet weak var HPTextField: UITextField!
     @IBOutlet weak var dustTextField: UITextField!
     @IBOutlet weak var poweredTextField: UISwitch!
+    @IBOutlet weak var pokemonImage: UIImageView!
     
     // Tag enum for UIPickers
     enum PickerViewTag: Int {
@@ -48,6 +49,9 @@ class IVCalculatorViewController: UIViewController, UIPickerViewDataSource, UIPi
         dustLevel.delegate = self
         dustLevel.dataSource = self
         dustTextField.inputView = dustLevel
+
+        pokemonImage.image = UIImage(named: pokeNames[0].lowercaseString)
+
     }
     
     // Returns number of columns to display
@@ -87,6 +91,7 @@ class IVCalculatorViewController: UIViewController, UIPickerViewDataSource, UIPi
             switch tag {
             case .PokeNameList:
                 pokemonNameTextField.text = pokeNames[row]
+                pokemonImage.image = UIImage(named: pokeNames[row].lowercaseString)
             case .DustPowerLevel:
                 dustTextField.text = String(dustList[row])
             }
