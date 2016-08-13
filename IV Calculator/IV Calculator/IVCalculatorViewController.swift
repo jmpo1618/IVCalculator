@@ -31,7 +31,7 @@ class IVCalculatorViewController: UIViewController, UIPickerViewDataSource, UIPi
     var pokeNames = ["Abra", "Aerodactyl", "Alakazam", "Arbok", "Arcanine", "Beedrill", "Bellsprout", "Blastoise", "Bulbasaur", "Butterfree", "Caterpie", "Chansey", "Charizard", "Charmander", "Charmeleon", "Clefable", "Clefairy", "Cloyster", "Cubone", "Dewgong", "Diglett", "Dodrio", "Doduo", "Dragonair", "Dragonite", "Dratini", "Drowzee", "Dugtrio", "Eevee", "Ekans", "Electabuzz", "Electrode", "Exeggcute", "Exeggutor", "Farfetch'd", "Fearow", "Flareon", "Gastly", "Gengar", "Geodude", "Golbat", "Goldeen", "Golduck", "Golem", "Graveler", "Grimer", "Growlithe", "Gyarados", "Haunter", "Hitmonchan", "Hitmonlee", "Horsea", "Hypno", "Ivysaur", "Jigglypuff", "Jolteon", "Jynx", "Kabuto", "Kabutops", "Kadabra", "Kakuna", "Kangaskhan", "Kingler", "Koffing", "Krabby", "Lapras", "Lickitung", "Machamp", "Machoke", "Machop", "Magikarp", "Magmar", "Magnemite", "Magneton", "Mankey", "Marowak", "Meowth", "Metapod", "Mr. Mime", "Nidoking", "Nidoqueen", "Nidoran (Female)", "Nidoran (Male)", "Nidorina", "Nidorino", "Ninetales", "Oddish", "Omanyte", "Omastar", "Onix", "Paras", "Parasect", "Persian", "Pidgeot", "Pidgeotto", "Pidgey", "Pikachu", "Pinsir", "Poliwag", "Poliwhirl", "Poliwrath", "Ponyta", "Porygon", "Primeape", "Psyduck", "Raichu", "Rapidash", "Raticate", "Rattata", "Rhydon", "Rhyhorn", "Sandshrew", "Sandslash", "Scyther", "Seadra", "Seaking", "Shellder", "Slowbro", "Slowpoke", "Snorlax", "Squirtle", "Starmie", "Staryu", "Tangela", "Tauros", "Tentacool", "Tentacruel", "Vaporeon", "Venomoth", "Venonat", "Venusaur", "Victreebel", "Vileplume", "Voltorb", "Vulpix", "Wartortle", "Weedle", "Weepinbell", "Weezing", "Wigglytuff", "Zubat"]
     var dustList = [200, 400, 600, 800, 1000, 1300, 1600, 1900, 2200, 2500, 3000, 3500, 4000, 4500, 5000, 6000, 7000, 8000, 9000, 10000]
     
-    // Toolbars for UIPickers
+    // Toolbars for UIPickers and TextFields
     var toolbar = UIToolbar()
     
 
@@ -49,6 +49,15 @@ class IVCalculatorViewController: UIViewController, UIPickerViewDataSource, UIPi
         pokemonNameTextField.inputView = pokemonNameList
         pokemonNameTextField.inputAccessoryView = toolbar
         pokemonImage.image = UIImage(named: pokeNames[0].lowercaseString)
+        
+        // Initialize CP Text Field
+        CPTextField.keyboardType = UIKeyboardType.NumberPad
+        CPTextField.inputAccessoryView = toolbar
+        
+        // Initialize HP Text Field
+        HPTextField.keyboardType = UIKeyboardType.NumberPad
+        HPTextField.inputAccessoryView = toolbar
+        
         
         // Initalize dust level box and picker
         dustTextField.text = String(dustList[0])
