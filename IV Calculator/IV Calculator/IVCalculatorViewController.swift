@@ -58,7 +58,6 @@ class IVCalculatorViewController: UIViewController, UIPickerViewDataSource, UIPi
         HPTextField.keyboardType = UIKeyboardType.NumberPad
         HPTextField.inputAccessoryView = toolbar
         
-        
         // Initalize dust level box and picker
         dustTextField.text = String(dustList[0])
         dustLevel.delegate = self
