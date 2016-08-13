@@ -15,6 +15,7 @@ class IVCalculatorViewController: UIViewController, UIPickerViewDataSource, UIPi
     @IBOutlet weak var HPTextField: UITextField!
     @IBOutlet weak var dustTextField: UITextField!
     @IBOutlet weak var poweredTextField: UISwitch!
+    @IBOutlet weak var pokemonImage: UIImageView!
     
     var pokemonNamePickerView = UIPickerView()
     var pokeNames = ["Abra", "Aerodactyl", "Alakazam", "Arbok", "Arcanine", "Beedrill", "Bellsprout", "Blastoise", "Bulbasaur", "Butterfree", "Caterpie", "Chansey", "Charizard", "Charmander", "Charmeleon", "Clefable", "Clefairy", "Cloyster", "Cubone", "Dewgong", "Diglett", "Dodrio", "Doduo", "Dragonair", "Dragonite", "Dratini", "Drowzee", "Dugtrio", "Eevee", "Ekans", "Electabuzz", "Electrode", "Exeggcute", "Exeggutor", "Farfetch'd", "Fearow", "Flareon", "Gastly", "Gengar", "Geodude", "Golbat", "Goldeen", "Golduck", "Golem", "Graveler", "Grimer", "Growlithe", "Gyarados", "Haunter", "Hitmonchan", "Hitmonlee", "Horsea", "Hypno", "Ivysaur", "Jigglypuff", "Jolteon", "Jynx", "Kabuto", "Kabutops", "Kadabra", "Kakuna", "Kangaskhan", "Kingdra", "Kingler", "Koffing", "Krabby", "Lapras", "Lickitung", "Machamp", "Machoke", "Machop", "Magikarp", "Magmar", "Magnemite", "Magneton", "Mankey", "Marowak", "Meowth", "Metapod", "Mr. Mime", "Nidoking", "Nidoqueen", "Nidoran (Female)", "Nidoran (Male)", "Nidorina", "Nidorino", "Ninetales", "Oddish", "Omanyte", "Omastar", "Onix", "Paras", "Parasect", "Persian", "Pidgeot", "Pidgeotto", "Pidgey", "Pikachu", "Pinsir", "Poliwag", "Poliwhirl", "Poliwrath", "Ponyta", "Porygon", "Primeape", "Psyduck", "Raichu", "Rapidash", "Raticate", "Rattata", "Rhydon", "Rhyhorn", "Sandshrew", "Sandslash", "Scyther", "Seadra", "Seaking", "Shellder", "Slowbro", "Slowpoke", "Snorlax", "Squirtle", "Starmie", "Staryu", "Tangela", "Tauros", "Tentacool", "Tentacruel", "Vaporeon", "Venomoth", "Venonat", "Venusaur", "Victreebel", "Vileplume", "Voltorb", "Vulpix", "Wartortle", "Weedle", "Weepinbell", "Weezing", "Wigglytuff", "Zubat"]
@@ -25,6 +26,7 @@ class IVCalculatorViewController: UIViewController, UIPickerViewDataSource, UIPi
         pokemonNamePickerView.delegate = self
         pokemonNamePickerView.dataSource = self
         pokemonNameTextField.inputView = pokemonNamePickerView
+        pokemonImage.image = UIImage(named: pokeNames[0].lowercaseString)
     }
     
     // Returns number of columns to display
@@ -43,6 +45,7 @@ class IVCalculatorViewController: UIViewController, UIPickerViewDataSource, UIPi
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         pokemonNameTextField.text = pokeNames[row]
+        pokemonImage.image = UIImage(named: pokeNames[row].lowercaseString)
     }
     
     // TODO: Add buttons for selecting in pickerView
