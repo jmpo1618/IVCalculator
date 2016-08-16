@@ -17,6 +17,7 @@ class IVCalculatorViewController: UIViewController, UIPickerViewDataSource, UIPi
     @IBOutlet weak var poweredTextField: UISwitch!
     @IBOutlet weak var pokemonImage: UIImageView!
     
+    
     // Tag enum for UIPickers
     enum PickerViewTag: Int {
         case PokeNameList
@@ -51,10 +52,12 @@ class IVCalculatorViewController: UIViewController, UIPickerViewDataSource, UIPi
         pokemonImage.image = UIImage(named: pokeNames[0].lowercaseString)
         
         // Initialize CP Text Field
+        CPTextField.text = "0"
         CPTextField.keyboardType = UIKeyboardType.NumberPad
         CPTextField.inputAccessoryView = toolbar
         
         // Initialize HP Text Field
+        HPTextField.text = "0"
         HPTextField.keyboardType = UIKeyboardType.NumberPad
         HPTextField.inputAccessoryView = toolbar
         
@@ -126,8 +129,7 @@ class IVCalculatorViewController: UIViewController, UIPickerViewDataSource, UIPi
         self.view.endEditing(true)
     }
     
-    // TODO: Add buttons for selecting in pickerView
-
+    
     
     // MARK: - Navigation
 

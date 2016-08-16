@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09D1A6281D5EFCF600ED450A /* IVResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1A6261D5EFCF600ED450A /* IVResultsViewController.swift */; };
+		09D1A6291D5EFCF600ED450A /* PokemonStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1A6271D5EFCF600ED450A /* PokemonStats.swift */; };
 		2EB45D8B1D4C4EE900964B31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB45D8A1D4C4EE900964B31 /* AppDelegate.swift */; };
 		2EB45D901D4C4EE900964B31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EB45D8E1D4C4EE900964B31 /* Main.storyboard */; };
 		2EB45D921D4C4EE900964B31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EB45D911D4C4EE900964B31 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09D1A6261D5EFCF600ED450A /* IVResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IVResultsViewController.swift; sourceTree = "<group>"; };
+		09D1A6271D5EFCF600ED450A /* PokemonStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonStats.swift; sourceTree = "<group>"; };
 		2EB45D871D4C4EE900964B31 /* IV Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IV Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EB45D8A1D4C4EE900964B31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EB45D8F1D4C4EE900964B31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,12 +101,14 @@
 		2EB45D891D4C4EE900964B31 /* IV Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				2EB45D8A1D4C4EE900964B31 /* AppDelegate.swift */,
-				2EEDB4371D4E8827004EF887 /* IVCalculatorViewController.swift */,
 				2EB45D8E1D4C4EE900964B31 /* Main.storyboard */,
-				2EB45D911D4C4EE900964B31 /* Assets.xcassets */,
+				2EEDB4371D4E8827004EF887 /* IVCalculatorViewController.swift */,
+				09D1A6261D5EFCF600ED450A /* IVResultsViewController.swift */,
+				09D1A6271D5EFCF600ED450A /* PokemonStats.swift */,
+				2EB45D8A1D4C4EE900964B31 /* AppDelegate.swift */,
 				2EB45D931D4C4EE900964B31 /* LaunchScreen.storyboard */,
 				2EB45D961D4C4EE900964B31 /* Info.plist */,
+				2EB45D911D4C4EE900964B31 /* Assets.xcassets */,
 			);
 			path = "IV Calculator";
 			sourceTree = "<group>";
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EEDB4381D4E8827004EF887 /* IVCalculatorViewController.swift in Sources */,
+				09D1A6291D5EFCF600ED450A /* PokemonStats.swift in Sources */,
 				2EB45D8B1D4C4EE900964B31 /* AppDelegate.swift in Sources */,
+				09D1A6281D5EFCF600ED450A /* IVResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

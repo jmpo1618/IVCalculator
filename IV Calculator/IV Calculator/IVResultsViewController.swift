@@ -12,6 +12,7 @@ class IVResultsViewController: UIViewController {
     
     var stats: PokemonStats?
 
+    @IBOutlet weak var pokemonImage: UIImageView!
     @IBOutlet weak var pokemonNameLabel: UILabel!
     @IBOutlet weak var CPLabel: UILabel!
     @IBOutlet weak var HPLabel: UILabel!
@@ -27,9 +28,9 @@ class IVResultsViewController: UIViewController {
             HPLabel.text = String(stats.HP)
             dustLabel.text = String(stats.dust)
             poweredLabel.text = String(stats.powered)
+            pokemonImage.image = UIImage(named: stats.name.lowercaseString)
         }
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
