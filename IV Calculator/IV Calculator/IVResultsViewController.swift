@@ -18,6 +18,7 @@ class IVResultsViewController: UIViewController {
     @IBOutlet weak var HPLabel: UILabel!
     @IBOutlet weak var dustLabel: UILabel!
     @IBOutlet weak var poweredLabel: UILabel!
+    @IBOutlet weak var mainStackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,7 @@ class IVResultsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

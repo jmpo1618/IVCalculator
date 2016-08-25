@@ -263,6 +263,7 @@
                         <outlet property="CPLabel" destination="Sav-6R-qeI" id="1nH-L3-8gy"/>
                         <outlet property="HPLabel" destination="8wP-1q-kjx" id="ZuO-KG-P7h"/>
                         <outlet property="dustLabel" destination="TFn-Y1-Ktw" id="dnB-mV-J31"/>
+                        <outlet property="mainStackView" destination="8b1-EL-GGA" id="JVz-qJ-Jnu"/>
                         <outlet property="pokemonImage" destination="G1X-P7-G5Q" id="v7g-aq-2td"/>
                         <outlet property="pokemonNameLabel" destination="Cmq-bY-kJE" id="v2r-ND-UBM"/>
                         <outlet property="poweredLabel" destination="ixt-IF-l7X" id="dzO-ua-kap"/>
