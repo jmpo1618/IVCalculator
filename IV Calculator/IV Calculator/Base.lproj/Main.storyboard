@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wwQ-8g-ras">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wwQ-8g-ras">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -245,17 +245,17 @@
                                 <exclude reference="p8I-1R-3k5"/>
                                 <exclude reference="Jrt-O0-qqO"/>
                                 <exclude reference="h3w-sG-LeX"/>
+                                <exclude reference="RTx-w1-aGo"/>
+                                <exclude reference="zku-pe-IaF"/>
                                 <exclude reference="ERD-gj-VCY"/>
                                 <exclude reference="Tgf-Is-KuN"/>
                                 <exclude reference="st2-kk-da6"/>
-                                <exclude reference="RTx-w1-aGo"/>
-                                <exclude reference="zku-pe-IaF"/>
-                                <exclude reference="0EN-o5-Gbj"/>
-                                <exclude reference="XXt-O3-s4c"/>
-                                <exclude reference="yOP-T5-pBc"/>
                                 <exclude reference="f7O-EA-rwa"/>
                                 <exclude reference="wR2-B5-CVa"/>
                                 <exclude reference="xU7-mU-5DX"/>
+                                <exclude reference="0EN-o5-Gbj"/>
+                                <exclude reference="XXt-O3-s4c"/>
+                                <exclude reference="yOP-T5-pBc"/>
                             </mask>
                         </variation>
                     </view>
